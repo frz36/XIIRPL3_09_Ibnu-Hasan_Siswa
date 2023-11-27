@@ -8,18 +8,15 @@ const UserSchema = new mongoose.Schema({
     }, 
     kelas: { 
         type: String, 
-        required: [true, 'Silahkan isikan kelas'],  
-        unique: true,  
+        required: [true, 'Silahkan isikan kelas'],   
     },
     noAbsen: { 
         type: String, 
-        required: [true, 'Silahkan isikan no. absen'],   
-        unique: true,  
+        required: [true, 'Silahkan isikan no. absen'],    
     },
     jenisKelamin: { 
         type: String, 
         required: [true, 'Silahkan isikan jenis kelamin'],  
-        unique: true,  
     },
     nis: { 
         type: String, 

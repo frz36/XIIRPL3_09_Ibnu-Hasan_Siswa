@@ -32,7 +32,7 @@ module.exports = {
                 message: "Data berhasil ditampilkan" 
             }) 
         } catch (error) { 
-            res.status(400).json({success: false}) 
+            res.status(400).json({success: false, error:error.message}) 
         } 
     }, 
     store: async (req, res) => { 
@@ -46,7 +46,7 @@ module.exports = {
                 message: "Data berhasil ditambahkan" 
             }) 
         } catch (error) { 
-            res.status(400).json({success: false}) 
+            res.status(400).json({success: false, error:error.message}) 
         } 
     }, 
     update: async (req, res) => { 
